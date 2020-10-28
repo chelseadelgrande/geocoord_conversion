@@ -3,7 +3,7 @@ import pandas as pd
 import xlsxwriter
 
 #read excel file
-df = pd.read_excel("Full_path_here",
+df = pd.read_excel("Full_path_here.xlsx",
             sheet_name = 'sht_name')
 df.head()
 
@@ -45,7 +45,7 @@ for key in coords_total.keys():
         row+=1
 workbook.close()
 #print(mrgs, dd)
-        #df2.to_excel("C:/Users/Chelsea Del Grande/Documents/USAID/Programming/outputx.xlsx", columns = ['mrgs', 'dd']) 
+        #df2.to_excel("Out_Path_Here.xlsx", columns = ['mrgs', 'dd']) 
     #if error in log, continue iterating
     #except TypeError:
         #print ('Error:', TypeError)
